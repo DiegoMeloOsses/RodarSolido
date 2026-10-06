@@ -8,64 +8,64 @@ const products = [
         id: 1,
         name: "Luz trasera recargable",
         category: "accesorios",
-        price: 12990,
-        image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=80"
+        price: 4990,
+        image: "https://i5.walmartimages.cl/asr/c4b4e0bd-421f-4965-947e-9f0a44e9c92e.ecff52fbb34fe78aa3c08361c30edf28.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
     },
 
     {
         id: 2,
         name: "Botella deportiva",
         category: "accesorios",
-        price: 7990,
-        image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
+        price: 5990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_963070-MLA100056278247_122025-F.webp"
     },
 
     {
         id: 3,
         name: "Guantes de ciclismo",
         category: "indumentaria",
-        price: 14990,
-        image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+        price: 9990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_606550-MLA110081592224_042026-F.webp"
     },
 
     {
         id: 4,
         name: "Cámara MTB 29",
         category: "repuestos",
-        price: 6990,
-        image: "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=80"
+        price: 4990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_605529-MLC115138944967_072026-F-camara-bicicleta-mtb-aro-16-ornate.webp"
     },
 
     {
         id: 5,
         name: "Multiherramienta",
         category: "accesorios",
-        price: 18990,
-        image: "https://images.unsplash.com/photo-1591638672248-9e3a3e7c7e9f?auto=format&fit=crop&w=800&q=80"
+        price: 10990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_626895-MLA117252236587_092026-F-multiherramienta-bicicleta-inbike-11-en-1-cortacadena-allen.webp"
     },
 
     {
         id: 6,
         name: "Porta caramañola",
         category: "accesorios",
-        price: 9990,
-        image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80"
+        price: 4990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_838185-MLC91136294674_092025-F-porta-botella-caramayola-para-bicicleta-ciclismo-blanco.webp"
     },
 
     {
         id: 7,
         name: "Cadena 11 velocidades",
         category: "repuestos",
-        price: 24990,
-        image: "https://images.unsplash.com/photo-1575585269294-7d28dd912db8?auto=format&fit=crop&w=800&q=80"
+        price: 39990,
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_718018-MLA99909105639_112025-F.webp"
     },
 
     {
         id: 8,
-        name: "Polera Rodar Sólido",
+        name: "Tricota",
         category: "indumentaria",
-        price: 24990,
-        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80"
+        price: 69990,
+        image: "https://www.tradeinn.com/f/14184/141840566/santini-maillot-de-manga-corta-uci-world-champion-2025.webp"
     }
 
 ];
