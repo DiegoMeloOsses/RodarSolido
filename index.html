@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rodar Sólido | Bicicletas, accesorios y servicio</title>
+
+    <meta name="description"
+          content="Rodar Sólido: bicicletas, accesorios, repuestos y servicio para ciclistas.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-container">
+            <img src="logo.png" alt="Rodar Sólido" class="logo">
+            <span>RODAR SÓLIDO</span>
+        </div>
+
+        <nav class="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <button class="cart-button" onclick="toggleCart()">
+            🛒 Carrito
+            <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                BICICLETAS · ACCESORIOS · SERVICIO
+            </p>
+
+            <h1>
+                Pedalea.<br>
+                <strong>Rueda sólido.</strong>
+            </h1>
+
+            <p>
+                Todo lo que necesitas para disfrutar,
+                mantener y mejorar tu bicicleta.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#productos" class="button primary">
+                    Ver productos
+                </a>
+
+                <a href="#servicios" class="button secondary">
+                    Nuestros servicios
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="products-section">
+
+        <div class="section-title">
+
+            <p>CATÁLOGO</p>
+
+            <h2>
+                Productos destacados
+            </h2>
+
+            <span>
+                Seleccionados para quienes disfrutan de rodar.
+            </span>
+
+        </div>
+
+
+        <!-- BUSCADOR -->
+
+        <div class="catalog-controls">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Buscar productos..."
+                oninput="filterProducts()"
+            >
+
+            <select id="category" onchange="filterProducts()">
+
+                <option value="all">
+                    Todas las categorías
+                </option>
+
+                <option value="accesorios">
+                    Accesorios
+                </option>
+
+                <option value="repuestos">
+                    Repuestos
+                </option>
+
+                <option value="indumentaria">
+                    Indumentaria
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCTOS -->
+
+        <div id="product-grid" class="product-grid">
+
+            <!-- Los productos se generan con JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICIOS ================= -->
+
+    <section id="servicios" class="services">
+
+        <div class="section-title">
+
+            <p>SERVICIO</p>
+
+            <h2>
+                Más que una tienda
+            </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    Taller
+                </h3>
+
+                <p>
+                    Mantención, ajustes y reparación
+                    para que tu bicicleta siga rodando.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚴
+                </div>
+
+                <h3>
+                    Bike Fit
+                </h3>
+
+                <p>
+                    Ajustamos tu posición sobre la bicicleta
+                    para mejorar comodidad y rendimiento.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Asesoría
+                </h3>
+
+                <p>
+                    Te ayudamos a elegir componentes,
+                    accesorios y equipamiento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+
+    <section id="nosotros" class="about">
+
+        <div class="about-content">
+
+            <p>
+                RODAR SÓLIDO
+            </p>
+
+            <h2>
+                Hecho para quienes viven sobre dos ruedas.
+            </h2>
+
+            <p>
+                Somos un proyecto dedicado al mundo de la bicicleta,
+                combinando productos, servicio y comunidad.
+            </p>
+
+            <p>
+                Queremos construir un espacio donde puedas encontrar
+                lo que necesitas para seguir rodando.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto" class="contact">
+
+        <div class="section-title">
+
+            <p>CONTACTO</p>
+
+            <h2>
+                ¿Necesitas ayuda?
+            </h2>
+
+            <span>
+                Escríbenos y conversemos.
+            </span>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="https://wa.me/56900000000"
+                target="_blank"
+                class="button whatsapp"
+            >
+                WhatsApp
+            </a>
+
+            <a
+                href="mailto:contacto@rodarsolido.cl"
+                class="button secondary"
+            >
+                Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <strong>
+                RODAR SÓLIDO
+            </strong>
+
+            <p>
+                Bicicletas · Accesorios · Servicio
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Rodar Sólido
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div id="cart" class="cart">
+
+        <div class="cart-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button onclick="toggleCart()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cart-items">
+
+            <p class="empty-cart">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <strong>
+                Total:
+            </strong>
+
+            <span id="cart-total">
+                $0
+            </span>
+
+        </div>
+
+
+        <button
+            class="button primary checkout"
+            onclick="checkout()"
+        >
+            Comprar por WhatsApp
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
